@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Digital Dune</title>
+  <meta name="description" content="Digital Dune offers web development, mobile apps, SaaS, AI agents, UI/UX design, and cloud consulting. Based in Nouakchott, Mauritania." />
+  <meta name="theme-color" content="#f5efe6" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Services — Digital Dune" />
+  <meta property="og:description" content="Digital Dune offers web development, mobile apps, SaaS, AI agents, UI/UX design, and cloud consulting. Based in Nouakchott, Mauritania." />
+  <meta property="og:url" content="https://digitaldune.mr/services.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Services — Digital Dune" />
+  <meta name="twitter:description" content="Digital Dune offers web development, mobile apps, SaaS, AI agents, UI/UX design, and cloud consulting. Based in Nouakchott, Mauritania." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="navbar"></div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" style="min-height:60vh;padding-top:calc(var(--navbar-height) + var(--space-3xl));padding-bottom:var(--space-3xl)">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-content reveal" style="max-width:800px">
+          <span class="eyebrow" data-i18n="services.hero.eyebrow">Services</span>
+          <h1 class="gradient-text" data-i18n="services.hero.title">Everything you need to ship a digital product.</h1>
+          <p class="lead" data-i18n="services.hero.lead">From a single landing page to a full AI-powered platform — here's what we build, and how we build it.</p>
+        </div>
+      </div>
+      <div class="hero-dunes" aria-hidden="true">
+        <svg viewBox="0 0 1440 300" preserveAspectRatio="none" style="color:var(--color-sand-mid);opacity:0.3">
+          <path d="M0,150 C240,60 480,180 720,120 C960,60 1200,150 1440,90 L1440,300 L0,300Z" fill="currentColor"/>
+        </svg>
+        <svg viewBox="0 0 1440 300" preserveAspectRatio="none" style="color:var(--color-sand);opacity:0.2">
+          <path d="M0,180 C300,90 600,210 900,150 C1200,90 1320,180 1440,135 L1440,300 L0,300Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="section" id="services-list">
+      <div class="container">
+        <div class="services-grid stagger-children reveal" id="services-grid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section-dark" id="process">
+      <div class="container">
+        <div class="heading-center reveal">
+          <span class="eyebrow eyebrow-light" data-i18n="services.process.eyebrow">Our process</span>
+          <h2 data-i18n="services.process.title">Five steps, start to finish.</h2>
+          <p data-i18n="services.process.lead">A clear process keeps timelines predictable and budgets under control.</p>
+        </div>
+        <div class="process-steps stagger-children reveal" id="process-steps">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="reveal">
+          <h2 data-i18n="services.cta.title">Not sure which service you need?</h2>
+          <p class="lead" data-i18n="services.cta.lead">Tell us about your idea — we'll help you figure out the right scope and approach.</p>
+          <div class="btn-group btn-group-center">
+            <a href="/contact.html" class="btn btn-primary" data-i18n="services.cta.ctaPrimary">Start a conversation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

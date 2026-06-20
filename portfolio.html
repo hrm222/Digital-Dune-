@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work — Digital Dune</title>
+  <meta name="description" content="Explore concept projects and sample builds by Digital Dune — web, mobile, SaaS and AI agent projects." />
+  <meta name="theme-color" content="#f5efe6" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Work — Digital Dune" />
+  <meta property="og:description" content="Explore concept projects and sample builds by Digital Dune — web, mobile, SaaS and AI agent projects." />
+  <meta property="og:url" content="https://digitaldune.mr/portfolio.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Our Work — Digital Dune" />
+  <meta name="twitter:description" content="Explore concept projects and sample builds by Digital Dune — web, mobile, SaaS and AI agent projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="navbar"></div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" style="min-height:50vh;padding-top:calc(var(--navbar-height) + var(--space-3xl));padding-bottom:var(--space-3xl)">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-content reveal" style="max-width:800px">
+          <span class="eyebrow" data-i18n="portfolio.hero.eyebrow">Our work</span>
+          <h1 class="gradient-text" data-i18n="portfolio.hero.title">Concepts and builds that show how we think.</h1>
+          <p class="lead" data-i18n="portfolio.hero.lead">Digital Dune is a young agency — these are concept projects and sample builds that demonstrate the kind of work we do across web, mobile, SaaS and AI. Real client work will be added here as projects launch.</p>
+        </div>
+      </div>
+      <div class="hero-dunes" aria-hidden="true">
+        <svg viewBox="0 0 1440 300" preserveAspectRatio="none" style="color:var(--color-sand-mid);opacity:0.3">
+          <path d="M0,150 C240,60 480,180 720,120 C960,60 1200,150 1440,90 L1440,300 L0,300Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO GRID -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="filters reveal" id="filters">
+          <!-- Injected by JS -->
+        </div>
+        <div class="portfolio-grid stagger-children reveal" id="portfolio-grid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="reveal">
+          <h2 data-i18n="home.cta.title">Have a project in mind?</h2>
+          <p class="lead" data-i18n="home.cta.lead">Tell us what you're building. We'll get back to you within a couple of days with next steps.</p>
+          <div class="btn-group btn-group-center">
+            <a href="/contact.html" class="btn btn-primary" data-i18n="home.cta.ctaPrimary">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

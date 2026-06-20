@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Digital Dune</title>
+  <meta name="description" content="Get in touch with Digital Dune. Start your project with a software agency based in Nouakchott, Mauritania." />
+  <meta name="theme-color" content="#f5efe6" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Digital Dune" />
+  <meta property="og:description" content="Get in touch with Digital Dune. Start your project with a software agency based in Nouakchott, Mauritania." />
+  <meta property="og:url" content="https://digitaldune.mr/contact.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact — Digital Dune" />
+  <meta name="twitter:description" content="Get in touch with Digital Dune. Start your project with a software agency based in Nouakchott, Mauritania." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="navbar"></div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" style="min-height:40vh;padding-top:calc(var(--navbar-height) + var(--space-3xl));padding-bottom:var(--space-xl)">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-content reveal" style="max-width:600px">
+          <span class="eyebrow" data-i18n="contact.hero.eyebrow">Contact</span>
+          <h1 class="gradient-text" data-i18n="contact.hero.title">Let's build something together.</h1>
+          <p class="lead" data-i18n="contact.hero.lead">Tell us about your project, your timeline, and your budget. We'll get back to you within 48 hours.</p>
+        </div>
+      </div>
+      <div class="hero-dunes" aria-hidden="true">
+        <svg viewBox="0 0 1440 250" preserveAspectRatio="none" style="color:var(--color-sand-mid);opacity:0.3">
+          <path d="M0,120 C240,50 480,150 720,100 C960,50 1200,120 1440,80 L1440,250 L0,250Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid reveal">
+          <!-- Form -->
+          <div>
+            <form id="contact-form" novalidate>
+              <div id="form-status" class="form-status"></div>
+              <div class="form-group">
+                <label class="form-label" for="name" data-i18n="contact.form.name">Full name</label>
+                <input class="form-input" type="text" id="name" name="name" required
+                  data-i18n="contact.form.namePlaceholder" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email" data-i18n="contact.form.email">Email address</label>
+                <input class="form-input" type="email" id="email" name="email" required
+                  data-i18n="contact.form.emailPlaceholder" placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject" data-i18n="contact.form.subject">Subject</label>
+                <input class="form-input" type="text" id="subject" name="subject" required
+                  data-i18n="contact.form.subjectPlaceholder" placeholder="What is this about?" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message" data-i18n="contact.form.message">Message</label>
+                <textarea class="form-textarea" id="message" name="message" required
+                  data-i18n="contact.form.messagePlaceholder" placeholder="Tell us about your project, goals, and timeline..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit" data-i18n="contact.form.submit">Send message</button>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <div class="contact-info" id="contact-info"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
